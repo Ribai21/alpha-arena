@@ -68,17 +68,17 @@ const Announcement = () => {
       </h2>
 
       {/* Input field */}
-      <div className="flex gap-2 mb-4">
+      <div className="sm:flex  gap-2 mb-4">
         <input
           type="text"
           placeholder="Enter a message..."
           value={newMessage}
           onChange={(e) => setNewMessage(e.target.value)}
-          className="border p-2 outline-none w-[70%] capitalize rounded me-auto"
+          className="border p-2 outline-none w-[70%] capitalize mb-2 rounded me-auto"
         />
         <button
           onClick={addMessage}
-          className="log-submit bg-blue-500 text-white !h-[44px] !w-[100px]  rounded"
+          className="log-submit bg-blue-500 text-white  !h-[44px] !w-[100px]  rounded"
         >
           Add
         </button>

@@ -83,13 +83,13 @@ const Addtrainer = () => {
   };
 
   return (
-    <div className="container p-4 w-full">
+    <div className="container p-4">
       <h3 className="text-4xl font-bold mb-4 text-white">
         <span className="stroke-text">Manage</span> Trainer
       </h3>
 
       {/* Search Input and Add Button */}
-      <div className="flex justify-between mb-4">
+      <div className="sm:flex justify-between xs:flex-col mb-4">
         <input
           type="search"
           placeholder="Search here"
@@ -97,12 +97,12 @@ const Addtrainer = () => {
           onChange={handleSearch}
         />
         <button  onClick={handleopen} className="log-submit !h-[40px] !w-fit px-2 text-white">
-          Add Member
+          Add Trainer
         </button>
       </div>
 
       {/* Table Container with Scroll */}
-      <div className="max-h-[450px] overflow-auto">
+      <div className="max-h-[450px]  overflow-auto">
         <table className="min-w-full  text-center">
           <thead className=" sticky top-0 z-30 text-white">
             <tr>

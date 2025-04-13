@@ -124,7 +124,7 @@ const Dashboard = () => {
           </div>
         )}
       </div>
-        <div className="bg-white  p-6 w-full rounded  shadow-md">
+        <div className="bg-white p-6  sm:w-full rounded  shadow-md">
           {selectedGraph === "revenue" && (
             <div style={{ width: "100%", height: 300 }}>
               <ResponsiveContainer>
@@ -282,21 +282,21 @@ const Dashboard = () => {
           )}
         </div>
       <div className="flex gap-7 mt-5 w-full">
-        <div className="w-[50%] bg-white p-4 rounded min-h-[350px] shadow-md">
+        <div className="w-full bg-white p-4 rounded min-h-[350px] sm:w-[50%] overflow-scroll shadow-md">
           <header className="text-2xl font-bold mb-2  border-b-[2px] border-orange-400 pb-3">
             Transaction List
           </header>
           
           {users.map((user,index) => (
             <div key={index} className="flex flex-col justify-center  mt-2">
-              <span className="flex justify-between capitalize font-bold text-lg">
-                {user.name} <span className="!text-sm font-semibold">{new Date(user.payment_date).toLocaleDateString()}</span>
+              <span className="flex justify-between capitalize font-bold text-sm sm:text-lg ">
+                {user.name} <span className="text-xs sm:text-sm font-semibold">{new Date(user.payment_date).toLocaleDateString()}</span>
               </span>
               <span className="text-xs">{user.mobile}</span>
             </div>
           ))}
         </div>
-        <div className="w-[50%]"></div>
+        {/* <div className="w-[50%]"></div> */}
       </div>
     </div>
   );

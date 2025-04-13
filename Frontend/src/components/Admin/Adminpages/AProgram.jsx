@@ -64,24 +64,24 @@ const AProgram = () => {
     };
 
     return (
-        <div className="p-4">
+        <div className="p-4 overflow-scroll">
             <h2 className="text-4xl text-white font-bold mb-4"><span className="stroke-text">Manage</span> Programs</h2>
 
             {/* Add Program Form */}
-            <div className="mb-4 flex">
+            <div className="mb-4 xs:flex-col  sm:flex ">
                 <input
                     type="text"
                     placeholder="Program Name"
                     value={newProgram.heading}
                     onChange={(e) => setNewProgram({ ...newProgram, heading: e.target.value })}
-                    className="border outline-none capitalize p-2 mr-2"
+                    className="border outline-none mb-1 capitalize p-2 mr-2"
                 />
                 <input
                     type="text"
                     placeholder="Description"
                     value={newProgram.details}
                     onChange={(e) => setNewProgram({ ...newProgram, details: e.target.value })}
-                    className="border outline-none capitalize p-2 mr-2"
+                    className="border outline-none mb-1 capitalize p-2 mr-2"
                 />
                 <button onClick={handleAddProgram} className="bg-blue-500   !h-[44px] !w-[160px] log-submit text-white px-4 py-2 rounded">
                     Add Program

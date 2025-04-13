@@ -101,7 +101,7 @@ const Addmember = () => {
       </h3>
 
       {/* Search Input and Add Button */}
-      <div className="flex justify-between mb-4">
+      <div className="flex justify-between  mb-4">
         <input
           type="search"
           placeholder="Search here"

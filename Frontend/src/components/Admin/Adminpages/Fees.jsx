@@ -43,7 +43,8 @@ const Fees = () => {
       <h2 className="text-4xl font-bold mb-4  text-white">
         <span className="stroke-text">Payment</span> Status
       </h2>
-      <table className="border-collapse w-full overflow-auto m-auto">
+      <div className="overflow-scroll">
+      <table className="border-collapse w-full m-auto">
         <thead>
           <tr className="bg-gray-100">
             <th className="text-orange-400 text-lg p-2">S.No</th>
@@ -92,6 +93,7 @@ const Fees = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };
