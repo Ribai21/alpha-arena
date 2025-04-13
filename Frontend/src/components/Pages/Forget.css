@@ -1,0 +1,74 @@
+.m-backscreen {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  width: 100%;
+}
+.m-model {
+  position: fixed;
+
+  top: 20px;
+  background: var(--appColor);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  height: fit-content;
+  width: 400px;
+}
+.h2 {
+  /* margin-top: -8px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 800;
+  color: orange;
+}
+.m-model span {
+  color: black !important;
+}
+.form-grp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.m-model .form-grp input {
+  outline: none;
+  height: 40px;
+  border-radius: 7px;
+  margin: 0 auto;
+
+  padding-left: 10px;
+  border: none;
+  width: 90%;
+}
+.f-btn {
+  width: 80%;
+  margin: 15px auto 30px auto;
+  height: 40px;
+  border: none;
+  background: orange;
+  border-radius: 9px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 100;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+  &:hover {
+    background: #ff7f00;
+  }
+}
+@media (max-width: 400px) {
+  .m-model {
+    scale: 0.7;
+  }
+}
