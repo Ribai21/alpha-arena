@@ -7,6 +7,7 @@ import Programs from "../components/programs/Programs";
 import Reasons from "../components/reasons/Reasons";
 import Testimonials from "../components/testimonials/Testimonials";
 
+
 import React from "react";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <Testimonials />
       <Join />
       <Footer />
+    
     </>
   );
 };

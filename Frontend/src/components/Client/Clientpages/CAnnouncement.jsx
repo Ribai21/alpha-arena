@@ -29,7 +29,7 @@ const CAnnouncement = () => {
           
             <th className="py-3 px-4 text-lg text-orange-400">Message</th>
             <th className="py-3 px-4 text-lg text-orange-400">S.No</th>
-            <th className="py-3 px-4 text-lg text-orange-400">Posted At</th>
+            <th className="py-3 px-4 text-lg text -orange-400">Posted At</th>
           
         </thead>
         <tbody className="text-black  overflow-scroll  ">

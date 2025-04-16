@@ -6,7 +6,7 @@ import Home from '../Langing/Home';
 import Login from '../components/Pages/Login';
 import Admin from '../components/Pages/Admin';
 // import Splash from '../components/Cursor/Splash';
-
+import Neo from '../components/Cursor/Neo';
 import Adminlay from '../components/Layout/Adminlay';
 import Dashboard from '../components/Admin/Adminpages/Dashboard';
 import Addmember from '../components/Admin/Adminpages/Addmember';
@@ -26,6 +26,7 @@ import Userdetails from '../components/Client/Clientpages/Userdetails';
 import TrainerAtt from '../components/Admin/Adminpages/TrainerAtt';
 import Announcement from '../components/Admin/Adminpages/Announcement';
 import CAnnouncement from '../components/Client/Clientpages/CAnnouncement';
+import About from "../components/Pages/About";
 
 const RouteApp = () => {
     return (
@@ -36,6 +37,7 @@ const RouteApp = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/admin" element={<Admin />} />
+                    <Route path="/about" element={<About />} />
 
                     {/* Admin Routes */}
                     <Route path="/admindas" element={<Adminlay />}>
@@ -74,6 +76,8 @@ const RouteApp = () => {
                     draggable
                 />
                 {/* <Splash /> */}
+                <Neo/>
+                
             </div>
         </>
     );
