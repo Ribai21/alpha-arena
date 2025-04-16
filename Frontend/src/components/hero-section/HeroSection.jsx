@@ -118,7 +118,7 @@ const HeroSection = () => {
         {/* LEFTSIDE BUTTON */}
         <div className="hero-buttons">
           <button className="btn whitespace-nowrap" onClick={handleJoinClick}>{change}</button>
-          <button className="btn"><Link to={'/about'}>Learn More</Link></button>
+          <button className="btn" onClick={()=>navigate("/about")}>Learn More</button>
         </div>
       </div>
       {/* RIGHT SIDE */}

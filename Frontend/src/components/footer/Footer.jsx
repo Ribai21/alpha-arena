@@ -10,6 +10,8 @@ import x from "../../assets/twitter.png";
 import CallIcon from "@mui/icons-material/CallOutlined";
 import Mail from "@mui/icons-material/MailOutlineOutlined";
 import Tele from "@mui/icons-material/SendOutlined";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Footer = () => {
   const transition = { type: "spring", duration: 3 };
@@ -43,13 +45,6 @@ const Footer = () => {
           </div>
           <div className="social-links">
             <a
-              href="https://github.com/yourprofile"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Github} alt="GitHub" />
-            </a>
-            <a
               href="https://www.instagram.com/yourprofile"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,12 +59,20 @@ const Footer = () => {
               <img src={LinkedIn} alt="LinkedIn" />
             </a>
             <a
+              href="https://github.com/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp className="w-[1.7rem] hover:-translate-y-1/3 transition duration-300 text-white" size={30}/>
+            </a>
+            <a
               href="https://twitter.com/yourprofile"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={x} className="x" alt="" />
             </a>
+            
           </div>
         </div>
         <div className="footer">
